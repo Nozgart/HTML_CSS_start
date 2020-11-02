@@ -1,0 +1,165 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    max-width: 1239px;
+    width: 100%;
+    height: 74px;
+    margin: 0 auto;
+    padding-top: 39px;
+}
+
+.header .menu{
+    display: flex;
+    color: #ffffff;
+    padding-left: 0;
+    list-style-type: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+
+.header .menu-item:not(:first-child){
+    margin-left: 40px;
+    position: relative;
+}
+
+.header .menu-item:not(:first-child)::before{
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #b0acac;
+    border-radius: 50%;
+}
+
+.header .phone{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 1.25em;
+}
+
+.header .btn-order{
+    border-radius: 2px;
+    width: 108px;
+    height: 34px;
+    margin-left: auto;
+}
+
+.btn{
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0.5em 1em;
+}
+
+.btn-default{
+    border: solid 2px #0dd1a2;
+}
+
+.btn-big{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 71px;
+    font-size: 21px;
+}
+
+.btn-fill{
+    background-color: #15b28d;
+}
+
+.btn-icon{
+    margin-right: 10px;
+}
+
+.first{
+    padding-top: 70px;
+    background: url(../img/bg.png) center / cover no-repeat;
+    height: 100vh;
+    position: relative;
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+
+.first .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1239px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.first .f-head{
+    margin-left: 57px;
+    margin-top: auto;
+}
+
+.first .title{
+    font-size: 96px;
+}
+
+.first .description{
+    line-height: 150%;
+    margin-top: 24px;
+    max-width: 494px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.first .buttons{
+    margin-left: 57px;
+    margin-bottom: auto;
+    margin-top: 71px;
+}
+
+.first .arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    opacity: .64;
+    transform: translateX(-50%);
+}
+
+.first .arrow-text{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+}
+
+.first .arrow-icon{
+    display: block;
+    margin: 5px auto 0;
+}
+
+.first .vr-kid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
