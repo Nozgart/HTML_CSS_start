@@ -163,3 +163,14 @@ body{
     right: 0;
     bottom: 0;
 }
+
+.first .sm-icons{
+    position: absolute;
+    left: 63px;
+    bottom: 30px;
+}
+
+.first .sm-icons .icon:not(:first-child){
+    margin-left: 12px;
+    position: relative;
+}
