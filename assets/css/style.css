@@ -90,6 +90,10 @@ body{
     font-size: 21px;
 }
 
+.btn-big:not(:first-child){
+    margin-left: 24px;
+}
+
 .btn-fill{
     background-color: #15b28d;
 }
@@ -170,7 +174,10 @@ body{
     bottom: 30px;
 }
 
+.first .sm-icons .icon{
+    position: relative;
+}
+
 .first .sm-icons .icon:not(:first-child){
     margin-left: 12px;
-    position: relative;
 }
